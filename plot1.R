@@ -35,8 +35,9 @@ pwrdf$Sub_metering_3<-as.numeric(as.character(pwrdf$Sub_metering_3))
 ##then proceed to create plot 1 and save in png and turn device off
 
 with(pwrdf,hist(pwrdf$Global_active_power, main = paste("Global Active Power"), col="red", xlab="Global Active Power (kilowatts)"))
-dev.copy(png, file="plot1.png", width=480, height=480)
+dev.copy(png, file="plot1.png", width=480, height=480,units="px",bg="white")
 dev.off()
+
 
   
   

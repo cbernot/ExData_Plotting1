@@ -21,7 +21,7 @@ with(pwrdf,{
 
   ##copy to png of correct pixel
   
-dev.copy(png, file="plot4.png", width=480, height=480, units="px")
+dev.copy(png, file="plot4.png", width=480, height=480, units="px",bg="white")
 ##close device
 dev.off()
 
